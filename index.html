@@ -1,0 +1,147 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sneha Yadav — Portfolio Card</title>
+  <style>
+    :root{
+      --bg: #f3f4f6;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --accent-600: #1d4ed8;
+      --glass: rgba(37,99,235,0.08);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background: linear-gradient(180deg, #eef2ff 0%, var(--bg) 100%);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }.card{
+  width:100%;
+  max-width:420px;
+  background:var(--card);
+  border-radius:16px;
+  box-shadow: 0 10px 30px rgba(16,24,40,0.08);
+  padding:28px;
+  display:grid;
+  grid-template-columns: 88px 1fr;
+  gap:18px;
+  align-items:center;
+}
+
+.avatar{
+  width:88px;
+  height:88px;
+  border-radius:14px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-600));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-weight:700;
+  font-size:28px;
+  flex-shrink:0;
+  box-shadow: 0 6px 18px rgba(37,99,235,0.18);
+}
+
+.content h1{
+  margin:0 0 6px 0;
+  font-size:20px;
+  letter-spacing: -0.2px;
+}
+
+.role{
+  margin:0 0 8px 0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.desc{
+  margin:0 0 12px 0;
+  color:#374151;
+  font-size:13px;
+  line-height:1.4;
+}
+
+.links{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 12px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:13px;
+  border:1px solid rgba(15,23,42,0.06);
+  background:linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.6));
+  color:var(--accent-600);
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(16,24,40,0.08)}
+
+.btn.icon-only{
+  padding:8px;
+  width:40px;
+  justify-content:center;
+}
+
+.btn svg{display:block}
+
+/* Responsive */
+@media (max-width:420px){
+  .card{grid-template-columns:72px 1fr;padding:20px}
+  .avatar{width:72px;height:72px;font-size:22px;border-radius:12px}
+}
+
+  </style>
+</head>
+<body>
+  <!--
+    Single-file portfolio card for Sneha Yadav (Full Stack Developer).
+    Replace href values with your real LinkedIn / GitHub URLs.
+  -->  <article class="card" aria-label="Profile card for Sneha Yadav">
+    <div class="avatar" aria-hidden="true">SY</div><div class="content">
+  <h1>Sneha Yadav</h1>
+  <p class="role">Full Stack Developer</p>
+  <p class="desc">I build web applications with clean, maintainable code — front-end, back-end, and everything in between. Passionate about JavaScript, React, Node.js, and delightful UX.</p>
+
+  <div class="links">
+    <!-- LinkedIn -->
+    <a class="btn" href="https://linkedin.com/in/sneha-yadav" target="_blank" rel="noopener noreferrer" aria-label="Sneha on LinkedIn">
+      <!-- linkedin svg -->
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6C1.1 6 0 4.88 0 3.5C0 2.12 1.12 1 2.5 1C3.88 1 4.98 2.12 4.98 3.5ZM.22 8.99H4.74V24H.22V8.99ZM7.5 8.99H11.84V11.07H11.9C12.6 9.72 14.18 8.99 15.9 8.99C19.98 8.99 21 11.58 21 15.34V24H16.48V16.34C16.48 14.5 16.44 11.98 13.9 11.98C11.32 11.98 11 14.06 11 16.2V24H6.5V8.99H7.5Z" fill="currentColor"/>
+      </svg>
+      <span>LinkedIn</span>
+    </a>
+
+    <!-- GitHub -->
+    <a class="btn" href="https://github.com/sneha-yadav" target="_blank" rel="noopener noreferrer" aria-label="Sneha on GitHub">
+      <!-- github svg -->
+      <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.36-1.3-1.72-1.3-1.72-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.75.41-1.27.74-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.5 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.43-2.71 5.4-5.29 5.68.42.36.8 1.07.8 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+      </svg>
+      <span>GitHub</span>
+    </a>
+  </div>
+</div>
+
+  </article>
+</body>
+</html>
